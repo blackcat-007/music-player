@@ -1,63 +1,115 @@
-# 🎧 Python Music Player 🎶
+  <h1>🎧 Python Music Player 🎶</h1>
 
-A lightweight, standalone **music player** built using **Python**, allowing users to load their local music folders and play audio tracks with **minimal quality loss**. Designed with simplicity and functionality in mind, the player provides a clean interface, playlist management, and consistent audio performance.
+  <p>
+    A lightweight, standalone <strong>music player</strong> built using <strong>Python</strong>, allowing users to load their local music folders and play audio tracks with <strong>minimal quality loss</strong>.
+    Designed with simplicity and functionality in mind, the player provides a clean interface, playlist management, and consistent audio performance.
+  </p>
 
----
+  <hr>
 
-## 🚀 Features
+  <h2>🚀 Features</h2>
+  <ul>
+    <li>📁 <strong>Local Folder Support</strong>: Add and browse your entire music library</li>
+    <li>🎵 <strong>High-Quality Playback</strong>: Low-latency, minimal compression loss</li>
+    <li>▶️ Basic controls: Play, Pause, Stop, Next, Previous</li>
+    <li>📜 Real-time display of current track info</li>
+    <li>🔁 Loop and shuffle modes <em>(optional if implemented)</em></li>
+    <li>🪟 Cross-platform GUI using <code>Tkinter</code> or <code>PyQt5</code></li>
+  </ul>
 
-- 📁 **Local Folder Support**: Add and browse your entire music library
-- 🎵 **High-Quality Playback**: Ensures **low-latency** and **minimal compression loss**
-- ▶️ Basic controls: Play, Pause, Stop, Next, Previous
-- 📜 Real-time display of current track info
-- 🔁 Loop and shuffle modes (optional if implemented)
-- 🪟 Cross-platform UI using `Tkinter` or other GUI frameworks
+  <hr>
 
----
+  <h2>🧠 Tech Stack & Libraries</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Component</th>
+        <th>Tech Used</th>
+        <th>Purpose</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Language</td>
+        <td>Python 3.x</td>
+        <td>Core logic</td>
+      </tr>
+      <tr>
+        <td>GUI</td>
+        <td>Tkinter or PyQt5</td>
+        <td>GUI for user interaction</td>
+      </tr>
+      <tr>
+        <td>Audio Playback</td>
+        <td>pygame.mixer / pydub / playsound</td>
+        <td>High-fidelity sound rendering</td>
+      </tr>
+      <tr>
+        <td>File Handling</td>
+        <td>os, glob, mutagen</td>
+        <td>Reading music folders and metadata</td>
+      </tr>
+      <tr>
+        <td>Formats Supported</td>
+        <td>.mp3, .wav, .flac</td>
+        <td>Common audio formats</td>
+      </tr>
+    </tbody>
+  </table>
 
-## 🧠 Tech Stack & Libraries
+  <blockquote>
+    🎧 <em>The player maintains a balance between processing efficiency and playback clarity using Python's audio libraries without compressing or resampling unnecessarily.</em>
+  </blockquote>
 
-| Component         | Tech Used                      | Purpose                                 |
-|------------------|--------------------------------|-----------------------------------------|
-| Language          | `Python 3.x`                   | Core logic                              |
-| GUI               | `Tkinter` or `PyQt5`           | GUI for user interaction                |
-| Audio Playback    | `pygame.mixer` / `pydub` / `playsound` | High-fidelity sound rendering     |
-| File Handling     | `os`, `glob`, `mutagen`        | Reading directories & music metadata    |
-| Audio Formats     | `.mp3`, `.wav`, `.flac`        | Supported audio formats                 |
+  <hr>
 
-> 🎧 *The player maintains a balance between processing efficiency and playback clarity using Python's audio libraries without compressing or resampling unnecessarily.*
-
----
-
-## 📁 Project Structure
-
-```bash
+  <h2>📁 Project Structure</h2>
+  <pre>
 music-player/
 ├── musicplayer.py             # Main script to launch the GUI player
-🛠️ How to Run Locally
-1. Clone the Repository
+  </pre>
 
+  <hr>
+
+  <h2>🛠️ How to Run Locally</h2>
+
+  <h3>1. Clone the Repository</h3>
+  <pre>
 git clone https://github.com/your-username/music-player.git
 cd music-player
-2. Install Required Dependencies
+  </pre>
 
+  <h3>2. Install Required Dependencies</h3>
+  <pre>
 pip install pygame mutagen
-(or)
-If you're using PyQt5:
-
-
+# OR (if using PyQt5)
 pip install pyqt5
-3. Run the Player
+  </pre>
 
+  <h3>3. Run the Player</h3>
+  <pre>
 python musicplayer.py
-🎧 Pro Tip: Place your .mp3 or .wav files inside a music/ folder and the player will automatically index them.
+  </pre>
 
-📸 Screenshots (optional)
-👤 Author
-Shubho (blackcat-007)
-🧑‍💻 Python Enthusiast & Audio Dev Hobbyist
-🌐 GitHub Profile
+  <p><strong>🎧 Pro Tip:</strong> Place your <code>.mp3</code> or <code>.wav</code> files inside a <code>music/</code> folder and the player will automatically index them.</p>
 
+  <hr>
 
+  <h2>👤 Author</h2>
+  <p>
+    <strong>Shubho (blackcat-007)</strong><br>
+    🧑‍💻 Python Enthusiast & Audio Dev Hobbyist<br>
+    🌐 <a href="https://github.com/blackcat-007" target="_blank">GitHub Profile</a>
+  </p>
 
-🎵 "Music gives a soul to the universe, wings to the mind, and life to everything." – Plato
+  <hr>
+
+  <h2>📄 License</h2>
+  <p>
+    This project is released into the <strong>Public Domain</strong>.  
+    You may use, modify, redistribute, or repurpose this code for any purpose — personal, academic, or commercial — without restriction or attribution.
+  </p>
+
+  <blockquote>
+    🎵 “Music gives a soul to the universe, wings to the mind, and life to everything.” – Plato
+  </blockquote>
